@@ -1,8 +1,7 @@
 """Contains symbols for easy update"""
 
 
-import pdb; pdb.set_trace()  # XXX BREAKPOINT
-tickers = [
+TICKERS = [
     "2GO",
     "8990P",
     "AAA",
