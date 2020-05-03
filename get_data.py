@@ -1,3 +1,4 @@
+import datetime as dt
 import os
 
 import pandas as pd
@@ -19,6 +20,10 @@ def get_data(symbol, start=None, end=None, resolution="D"):
     resolution : string
         Resolution. (e.g. 'D', 'W', 'M')
     """
+
+    if not start and not end:
+        end = dt.date.today()
+        start = end - dt.timedelta(days=365 * 5)
 
     df = pd.read_csv(PATH.format(symbol=symbol), index_col="date", parse_dates=["date"])
 
