@@ -8,6 +8,6 @@ setup(
     author="Joseph Bonilla",
     author_email="bonillajeb@gmail.com",
     license="MIT",
-    packages=["pse_data"],
+    packages=["."],
     zip_safe=False,
 )
