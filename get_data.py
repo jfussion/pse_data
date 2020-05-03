@@ -1,6 +1,8 @@
+import os
+
 import pandas as pd
 
-PATH = "data/{symbol}.csv"
+PATH = os.path.dirname(__file__) + "/data/{symbol}.csv"
 
 
 def get_data(symbol, start=None, end=None, resolution="D"):
