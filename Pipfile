@@ -9,8 +9,6 @@ notebook = "*"
 [packages]
 requests = "*"
 pandas = "*"
-pandas-datareader = "*"
-matplotlib = "*"
 
 [requires]
 python_version = "3.7"
